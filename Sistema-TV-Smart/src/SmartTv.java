@@ -1,6 +1,6 @@
 public class SmartTv {
 
-    boolean ligada = false;
+    boolean ligada = false;//escopo de bloco
     int canal = 4;
     int volume = 16;
 
@@ -33,7 +33,7 @@ public class SmartTv {
    
     }
 
-    public void MudarCanal(int canal){
+    public void MudarCanal(int canal){ //escopo de metodo
         if(this.canal == canal)
             System.out.print("Já está nesse canal não é possivel mudar para ele!");
         else{
