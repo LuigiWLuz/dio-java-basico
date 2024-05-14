@@ -1,7 +1,7 @@
 public class pilhaDeExecucao {
 
    static void main(String[] args){
-
+    a();
    }
 
    static void a(){
