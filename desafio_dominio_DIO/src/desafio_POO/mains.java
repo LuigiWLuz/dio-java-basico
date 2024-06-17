@@ -22,6 +22,31 @@ public class mains {
         mentoria.setDescricao("Faça os outros de besta");
         mentoria.setDataMentoria(LocalDate.now());
 
+
+
+
+        bootcamp Bootcamp = new bootcamp();
+        Bootcamp.setNome("Bootcamp Java");
+        Bootcamp.setDescricao("Bootcamp na linguagem java para iniciantes");
+        Bootcamp.getConteudos().add(curso1);
+        Bootcamp.getConteudos().add(curso2);
+        Bootcamp.getConteudos().add(mentoria);
+
+
+
+
+        Devs dev = new Devs();
+        dev.setNome("Marcelinho de Caçapava");
+        dev.inscreverBootcamp(Bootcamp);
+
+
+        
+        Devs dev2 = new Devs();
+        dev2.setNome("Juninho Ruindade Pura");
+        dev.inscreverBootcamp(Bootcamp);
+        dev2.progredirBootcamp();
+        dev2.calcularTotalXp();
+
     
     }
 }
